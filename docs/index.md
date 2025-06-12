@@ -4,5 +4,20 @@
 
 # LSL.Disposables.EnvironmentVariables
 
-Provide package documentation here.
+A simple library to allow for disposable environment variables. It provides a scope for a set of environment variables and ensures that the state of the environment variables is restored after the scope has been disposed.
 
+# Quick Start
+
+```csharp
+using LSL.Disposables.EnvironmentVariables;
+
+...
+
+using var disposableEnvironmentVars = new DisposableEnvironmentVariables();
+
+Environment.SetVariable("test", "value");
+
+// test is only available in this scope
+// Any added variables will be removed once the
+// scope has been exited
+```
