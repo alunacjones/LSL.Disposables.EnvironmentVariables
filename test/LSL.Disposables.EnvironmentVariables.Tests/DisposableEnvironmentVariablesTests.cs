@@ -19,6 +19,7 @@ public class DisposableEnvironmentVariablesTests
 
             Environment.GetEnvironmentVariable("Test").Should().Be("hello");
             Environment.GetEnvironmentVariable("First").Should().Be("Another");
+            Environment.GetEnvironmentVariable("Second").Should().Be(null);
         }
 
         Environment.GetEnvironmentVariable("Test").Should().BeNull();
