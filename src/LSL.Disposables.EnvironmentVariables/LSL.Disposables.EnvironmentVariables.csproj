@@ -14,9 +14,9 @@
     <TargetFrameworks>net451;netstandard2.0</TargetFrameworks>
     <Version>1.0.1</Version>
     <PackageVersion>1.0.1</PackageVersion>
-    <PackageTags></PackageTags>
+    <PackageTags>dispose;disposable;environment;variables;variable;dispose</PackageTags>
     <PackageReadmeFile>readme.md</PackageReadmeFile>
-    <PackageDescription>Description here</PackageDescription>
+    <PackageDescription>Disposable Environment Variables</PackageDescription>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RepositoryUrl>https://github.com/alunacjones/LSL.Disposables.EnvironmentVariables</RepositoryUrl>
     <Authors>alunacjones</Authors>
