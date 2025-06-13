@@ -10,11 +10,5 @@ internal static class DictionaryEnvironmentVariablesExtensions
         source
             .Keys
             .OfType<string>()
-            .Aggregate(
-                new Dictionary<string, string>(),
-                (agg, item) =>
-                {
-                    agg.Add(item, (string)source[item]);
-                    return agg;
-                });
+            .ToDictionary(key => key, key => (string)source[key]);
 }

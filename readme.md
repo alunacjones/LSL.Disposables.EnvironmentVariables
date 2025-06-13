@@ -19,7 +19,7 @@ Environment.SetVariable("test", "value");
 
 // test is only available in this scope
 // Any added variables will be removed once the
-// scope has been exited
+// scope has been exited (disposableEnvironmentVars has been disposed)
 ```
 <!-- HIDE -->
 ## Further Documentation
